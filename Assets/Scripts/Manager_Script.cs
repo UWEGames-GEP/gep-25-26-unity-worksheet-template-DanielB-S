@@ -9,6 +9,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public GameState state;
     bool hasChangedState;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,24 +19,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (state == GameState.PLAY)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                state = GameState.PAUSE;
-                hasChangedState = true;
-            }
-        }
-        else if (state == GameState.PAUSE)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                state = GameState.PLAY;
-                hasChangedState = true;
-            }
-        }
-
-        /*switch (state)
+        //Switch Statement for changing state when esc is pressed
+        switch (state)
         {
             case GameState.PLAY:
                 if (Input.GetKeyDown(KeyCode.Escape))
@@ -52,11 +37,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     hasChangedState = true;
                 }
                 break;
-        }*/
+        }
     }
 
     private void LateUpdate()
     {
+        //Switch Statement to freeze or unfreeze the game when esc is pressed
         switch (state)
         {
             case GameState.PLAY:
