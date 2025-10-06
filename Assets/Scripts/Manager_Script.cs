@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -33,22 +34,37 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 hasChangedState = true;
             }
         }
+
+        /*switch (state)
+        {
+            case GameState.PLAY:
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    state = GameState.PAUSE;
+                    hasChangedState = true;
+                }
+                break;
+                
+            case GameState.PAUSE:
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    state = GameState.PLAY;
+                    hasChangedState = true;
+                }
+                break;
+        }*/
     }
 
     private void LateUpdate()
     {
-        if (hasChangedState)
+        switch (state)
         {
-            hasChangedState = false;
+            case GameState.PLAY:
+                Time.timeScale = 1.0f; break;
 
-            if (state == GameState.PLAY)
-            {
-                Time.timeScale = 1.0f;
-            }
-            else if (state == GameState.PAUSE)
-            {
-                Time.timeScale = 0.0f;
-            }
+            case GameState.PAUSE:
+                Time.timeScale = 0.0f; break;
         }
+
     }
 }
