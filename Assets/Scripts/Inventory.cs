@@ -5,20 +5,26 @@ using UnityEditor.Build.Content;
 
 public class Inventory : MonoBehaviour
 {
-    public List<string> items = new List<string>();
+    //public class ItemObject {}
+
+    public List<ItemObject> items = new List<ItemObject>();
 
     public GameManager manager;
 
-    public void AddItemToInventory(string itemName)
+    public void AddItemToInventory(ItemObject item)
     {
-        items.Add(itemName);
+        items.Add(item);
     }
 
-    public void RemoveItemFromInventory(string itemName)
+    public void RemoveItemFromInventory(ItemObject item)
     {
-        items.Remove(itemName);
+        items.Remove(item);
     }
 
+    public void RemoveItemFromInventory()
+    {
+
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,12 +40,13 @@ public class Inventory : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Collectable collisionItem = hit.gameObject.GetComponent<Collectable>();
+        ItemObject collisionItem = hit.gameObject.GetComponent<ItemObject>();
 
         if (collisionItem != null)
         {
-            items.Add(collisionItem.name);
-            Destroy(collisionItem.gameObject);
+            items.Add(collisionItem);
+            
+            collisionItem.gameObject.SetActive(false);
         }
     }
 
