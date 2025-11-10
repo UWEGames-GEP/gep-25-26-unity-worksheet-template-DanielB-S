@@ -8656,6 +8656,7 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  manager: {fileID: 1234846991}
 --- !u!1001 &1882507476
 PrefabInstance:
   m_ObjectHideFlags: 0

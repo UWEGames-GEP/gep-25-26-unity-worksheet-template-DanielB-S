@@ -29,14 +29,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Z))
-        {
-            AddItemToInventory("Generic Item");
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            RemoveItemFromInventory("Generic Item");
-        }*/
+
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)

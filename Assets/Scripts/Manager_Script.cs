@@ -19,27 +19,25 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    public void Pausing()
+    {
         //Switch Statement for changing state when esc is pressed
         switch (state)
         {
             case GameState.PLAY:
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    state = GameState.PAUSE;
-                    hasChangedState = true;
-                }
+                state = GameState.PAUSE;
+                hasChangedState = true;
                 break;
-                
+
             case GameState.PAUSE:
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    state = GameState.PLAY;
-                    hasChangedState = true;
-                }
+                state = GameState.PLAY;
+                hasChangedState = true;
                 break;
         }
     }
-
     private void LateUpdate()
     {
         //Switch Statement to freeze or unfreeze the game when esc is pressed
