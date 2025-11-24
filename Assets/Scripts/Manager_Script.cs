@@ -2,10 +2,6 @@ using System.Collections;
 using UnityEngine;
 public class GameManager : MonoBehaviour
 {
-    public enum GameState
-    {
-        PLAY, PAUSE
-    }
 
     public GameState state;
     bool hasChangedState;
@@ -51,4 +47,9 @@ public class GameManager : MonoBehaviour
         }
 
     }
+}
+
+public enum GameState
+{
+    PLAY, PAUSE
 }
