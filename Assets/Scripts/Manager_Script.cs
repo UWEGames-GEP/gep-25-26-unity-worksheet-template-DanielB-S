@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 
     public GameState state;
     bool hasChangedState;
-    public GameObject InventoryUI;
+    public GameObject InventoryUserInterface;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,12 +42,12 @@ public class GameManager : MonoBehaviour
         {
             case GameState.PLAY:
                 Time.timeScale = 1.0f; 
-                InventoryUI.SetActive(false);
+                InventoryUserInterface.SetActive(false);
                 Cursor.lockState = CursorLockMode.Locked; break;
 
             case GameState.PAUSE:
                 Time.timeScale = 0.0f; 
-                InventoryUI.SetActive(true);
+                InventoryUserInterface.SetActive(true);
                 Cursor.lockState = CursorLockMode.None; break;
         }
 
