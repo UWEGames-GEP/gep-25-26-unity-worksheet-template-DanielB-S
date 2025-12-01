@@ -41,12 +41,12 @@ public class GameManager : MonoBehaviour
         switch (state)
         {
             case GameState.PLAY:
-                Time.timeScale = 1.0f; 
+                Time.timeScale = 1.0f;
                 InventoryUserInterface.SetActive(false);
                 Cursor.lockState = CursorLockMode.Locked; break;
 
             case GameState.PAUSE:
-                Time.timeScale = 0.0f; 
+                Time.timeScale = 0.0f;
                 InventoryUserInterface.SetActive(true);
                 Cursor.lockState = CursorLockMode.None; break;
         }
