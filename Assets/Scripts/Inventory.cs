@@ -79,7 +79,7 @@ public class Inventory : MonoBehaviour
     {
         manager = FindAnyObjectByType<GameManager>();
 
-        Transform worldItemsTransform = GameObject.Find("WorldItems").transform;
+        Transform worldItemsTransform = GameObject.Find("Game_Collectable").transform;
     }
 
     // Update is called once per frame
