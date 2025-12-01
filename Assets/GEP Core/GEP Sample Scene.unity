@@ -1171,7 +1171,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3304,7 +3304,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4304,7 +4304,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5955,7 +5955,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7977,7 +7977,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9039,7 +9039,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9789,7 +9789,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10448,7 +10448,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1520620147}
         m_TargetAssemblyTypeName: InventoryUI, Assembly-CSharp
-        m_MethodName: RemoveItemFromInventory
+        m_MethodName: OnInventoryUIButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
